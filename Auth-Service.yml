@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: Auth-Service
   datasource:
     url: jdbc:mysql://localhost:3306/learn_sp
     username: root
@@ -9,6 +11,22 @@ spring:
       ddl-auto: update
     show-sql: true
     database-platform: org.hibernate.dialect.MySQLDialect
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+  config:
+    import: optional:configserver:http://localhost:7071
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+    
     
 server:
   port: 8081
+        
+     
+  
