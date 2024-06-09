@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: Auth-Service
   datasource:
     url: jdbc:mysql://localhost:3306/learn_sp
     username: root
@@ -15,8 +13,6 @@ spring:
     admin:
       client:
         url: http://localhost:1111/
-  config:
-    import: optional:configserver:http://localhost:7071
     
 management:
   endpoints:
