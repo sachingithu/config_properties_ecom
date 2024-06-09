@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/learn_sp
+    url: jdbc:mysql://localhost:3306/majorproj_ecom
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
