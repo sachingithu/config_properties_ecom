@@ -3,7 +3,6 @@ spring:
     import: optional:configserver:http://localhost:7071
   datasource:
     password: root
-    url: jdbc:mysql://localhost:3306/majorproj_ecom
     username: root
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
@@ -12,6 +11,6 @@ spring:
     show-sql: true
 
   server:
-  port: 8081  
+  port: 8088  
      
   
