@@ -22,5 +22,14 @@ management:
       
 server:
   port: 8888    
+  
+#Application Messages
+auth-service:
+ messages:
+  userReg: User Created
+  userRegErr: User Creation Failed
+  login: Logged In Successfully
+  logInErr: Invalid Credentials
+           
      
   
